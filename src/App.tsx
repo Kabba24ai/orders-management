@@ -485,7 +485,7 @@ export default function OrdersAdmin() {
                           onClick={() => handleOrderClick(order)} 
                           className={`transition-colors p-1 ${
                             order.adminNotes 
-                              ? 'text-orange-600 hover:text-orange-900' 
+                             ? 'text-black hover:text-gray-700' 
                               : 'text-blue-600 hover:text-blue-900'
                           }`}
                           title="View Details"
