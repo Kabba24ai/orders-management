@@ -483,7 +483,11 @@ export default function OrdersAdmin() {
                       <div className="flex items-center gap-1">
                         <button 
                           onClick={() => handleOrderClick(order)} 
-                          className="text-blue-600 hover:text-blue-900 transition-colors p-1" 
+                          className={`transition-colors p-1 ${
+                            order.adminNotes 
+                              ? 'text-orange-600 hover:text-orange-900' 
+                              : 'text-blue-600 hover:text-blue-900'
+                          }`}
                           title="View Details"
                         >
                           {order.adminNotes ? <FileText className="h-4 w-4" /> : <Edit className="h-4 w-4" />}
